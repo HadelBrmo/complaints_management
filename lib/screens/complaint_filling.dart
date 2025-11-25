@@ -1,3 +1,4 @@
+import 'package:complaints_management/screens/complaints_status.dart';
 import 'package:flutter/material.dart';
 import '../../core/widgets/field_title.dart';
 import '../../core/widgets/complaint_text_field.dart';
@@ -48,7 +49,7 @@ class _ComplaintPageState extends State<ComplaintPage> {
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.primary,
+                    color: AppColors.primaryDark,
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -123,7 +124,10 @@ class _ComplaintPageState extends State<ComplaintPage> {
           actions: [
             IconButton(
               icon: const Icon(Icons.list_alt, color: Colors.white),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder:(context)=>ComplaintsPage() ));
+                
+              },
             ),
           ],
         ),
@@ -183,8 +187,9 @@ body: Padding(
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    
                     AttachButton(title: "إرفاق ملف", onPressed: () {}),
-                    AttachButton(title: "إرفاق صورة", onPressed: () {}),
+                    AttachButton(title: "إرفاق صورة", onPressed: () {}, ),
                   ],
                 ),
 
