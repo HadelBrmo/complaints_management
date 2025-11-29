@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../core/widgets/complaint_card.dart';
-import '../../core/theming/color.dart';
+import '../../../../core/widgets/complaint_card.dart';
+import '../../../../core/theming/color.dart';
 
 
 class ComplaintsPage extends StatefulWidget {

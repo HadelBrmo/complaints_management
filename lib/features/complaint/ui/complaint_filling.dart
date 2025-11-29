@@ -1,9 +1,9 @@
-import 'package:complaints_management/screens/complaints_status.dart';
+import 'package:complaints_management/features/complaint/bussiness_logic/complaints_status.dart';
 import 'package:flutter/material.dart';
-import '../../core/widgets/field_title.dart';
-import '../../core/widgets/complaint_text_field.dart';
-import '../../core/widgets/attach_button.dart';
-import '../../core/theming/color.dart';
+import '../../../../core/widgets/field_title.dart';
+import '../../../../core/widgets/complaint_text_field.dart';
+import '../../../../core/widgets/attach_button.dart';
+import '../../../../core/theming/color.dart';
 
 class ComplaintPage extends StatefulWidget {
   const ComplaintPage({super.key});
